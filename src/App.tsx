@@ -7,11 +7,36 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/blog" style={{ marginLeft: "10px" }}>Blog</Link>
-         <Link to="/contact" style={{ marginLeft: "10px" }}>Contact</Link>
-      </nav>
+     <nav className="bg-black text-white px-8 py-4 flex justify-between items-center shadow-md">
+  
+  <h1 className="text-xl font-bold text-green-500">
+    MyWebsite
+  </h1>
+
+  <div className="flex gap-6">
+    <Link 
+      to="/" 
+      className="hover:text-green-400 transition duration-300"
+    >
+      Home
+    </Link>
+
+    <Link 
+      to="/blog" 
+      className="hover:text-green-400 transition duration-300"
+    >
+      Blog
+    </Link>
+
+    <Link 
+      to="/contact" 
+      className="hover:text-green-400 transition duration-300"
+    >
+      Contact
+    </Link>
+  </div>
+
+</nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
