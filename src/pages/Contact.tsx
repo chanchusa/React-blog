@@ -5,7 +5,7 @@ function Contact() {
       <div className="bg-gray-900 p-10 rounded-2xl shadow-2xl w-full max-w-lg">
         
         <h1 className="text-3xl font-bold mb-6 text-center">
-          Contact Us 📩
+          Contact Me 📩
         </h1>
 
         <form className="flex flex-col gap-4">
